@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+
+        div.font1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+
+        div.solidborder {
+            border-style: solid;
+            border-width: thin;
+            width: 600px;
+            padding: 10px;
+        }
+
+        div.spacer {
+            height: 70%;
+        }
+
+        td.buffer {
+            width: 160px;
+        }
+
+        td.col1 {
+            width: 40%;
+            font-weight: bold;
+        }
+
+        td.col2 {
+            width: 60%;
+        }
+    </style>
+
+
+
+</head>
+
+
+<body>
+
+    <script language="JavaScript">
+
+        function test1(form) {
+            var position1 = form.front_manager.value;
+            var position2 = form.dt_manager.value;
+            var position3 = form.catering.value;
+
+
+
+            document.getElementById("front_manager").innerHTML = position1;
+            document.getElementById("dt_manager").innerHTML = position2;
+            document.getElementById("catering").innerHTML = position3;
+
+
+        }
+
+    </script>
+
+
+    <center>
+        <div class="font1 solidborder">
+            <h2>The Book</h2>
+            <form name="submission_form" method="GET" onsubmit="return false">
+                <table>
+
+
+                    <tr>
+                        <td>
+
+                            <b>1. Tell me who's running the shift :</b>
+                            <table>
+
+                                <tr>
+                                    <td>
+
+                                        Front ?
+                                    </td>
+                                    <td>
+                                        <input type="text" name="front_manager" value="" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        DT?
+                                    </td>
+                                    <td>
+                                        <input type="text" name="dt_manager" value="" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Catering?
+                                    </td>
+                                    <td>
+                                        <input type="text" name="catering" value="" />
+                                    </td>
+                                </tr>
+                            </table> <br /><br />
+                        </td>
+                    </tr>
+                </table>
+                <input type="button" value="Submit" id="button1" onclick="test1(this.form)" />
+
+            </form>
+
+        </div>
+        <div class="spacer"></div>
+        <div class="font1">
+            <table>
+                <tr>
+                    <td class="col1"><b>Front: </b></td>
+                    <td class="col2" id="front_manager"></td>
+                </tr>
+                <tr>
+                    <td class="col1"><b>DT: </b></td>
+                    <td class="col2" id="dt_manager"></td>
+                </tr>
+                <tr>
+                    <td class="col1"><b>Catering: </b></td>
+                    <td class="col2" id="catering"></td>
+                </tr>
+            </table>
+
+
+        </div>
+
+
+
+    </center>
+
+
+</body>
+
+</html>
