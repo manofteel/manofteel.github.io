@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+
+
+    <body>
+
+        <script language="JavaScript">
+
+        function test1(form) {
+            
+            document.getElementById("front").innerHTML = form.front.value;
+            document.getElementById("dt").innerHTML = form.dt.value;
+            document.getElementById("catering").innerHTML = form.catering.value;
+        }
+
+        </script>
+
+
+        <form name="myform" action="" onsubmit="return false" method="get" onkeypress="if (event.key == 'Enter') { document.getElementById('button1').click(); }">
+           
+            <fieldset>
+                
+                Front:    <input type="text" name="front" /><br /><br />
+                DT:       <input type="text" name="dt" /><br /><br />
+                Catering: <input type="text" name="catering" />
+                <input type="button" name="button1" value="submit" onclick="test1(this.form)" />
+
+
+
+            </fieldset>
+        </form>
+
+        <b>Assignments</b><br /><br />
+        <p id="front"></p><br /><br />
+        <p id="dt"></p><br /><br />
+        <p id="catering"></p><br />
+
+    </body>
+</html>
