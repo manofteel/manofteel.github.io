@@ -5,9 +5,9 @@
 <head>
     <style>
 
-        div.font1 {
+        body.font1 {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-weight: bold;
+            
         }
 
         div.solidborder {
@@ -17,6 +17,11 @@
             padding: 10px;
         }
 
+        td.col2{
+            width:50%;
+        }
+
+
     </style>
 
 
@@ -24,16 +29,16 @@
 </head>
 
 
-<body>
+<body class="font1">
 
     <script language="JavaScript">
 
         function test1(form) {
-            var position1 = form.Front_Manager.value;
+            var position1 = form.Front_Manager.value; 
             var position2 = form.DT_Manager.value;
             var position3 = form.Catering.value;
-            var position4 = form.noF2Fleader.value;
-            var position5 = form.noF2Fleader2.value;
+            var position4 = form.NoF2FLeader.value; 
+            var position5 = form.NoF2FLeader2.value;
             var position6 = form.DTShakes.value;
             var position7 = form.TeamLeader1.value;
             var position8 = form.TeamLeader2.value;
@@ -50,13 +55,14 @@
             var position18 = form.TeamMember3at7.value;
             var position19 = form.TeamMember1at8.value;
             var position20 = form.TeamMember2at8.value;
-            var position21 = form.TeamMember3at8.value;
+            var position21 = form.TeamMember3at8.value; 
 
 
 
-            document.getElementById("front_manager").innerHTML = position1;
-            document.getElementById("dt_manager").innerHTML = position1;
-            document.getElementById("catering").innerHTML = position3;
+           document.getElementById("Front_Manager").innerHTML = position1; 
+            document.getElementById("DT_Manager").innerHTML = position2; 
+            document.getElementById("Catering").innerHTML = position3; 
+            document.getElementById("Deposit").innerHTML = position5;
 
 
         }
@@ -65,7 +71,7 @@
 
 
     <center>
-        <div class="font1 solidborder">
+        <div class="solidborder">
             <h2>The Book</h2>
             <form name="submission_form" method="GET" onsubmit="return false">
                 <table>
@@ -83,15 +89,15 @@
                                         Front ?
                                     </td>
                                     <td>
-                                        <input type="text" name="front_manager" value="" />
+                                        <input type="text" name="Front_Manager" value="" />
                                     </td>
-                                </tr>
+                                </tr> 
                                 <tr>
                                     <td>
                                         DT?
                                     </td>
                                     <td>
-                                        <input type="text" name="dt_manager" value="" />
+                                        <input type="text" name="DT_Manager" value="" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -99,56 +105,82 @@
                                         Catering?
                                     </td>
                                     <td>
-                                        <input type="text" name="catering" value="" />
+                                        <input type="text" name="Catering" value="" />
                                     </td>
                                 </tr>
                             </table> <br /><br />
                         </td>
                     </tr>
-                </table>
-                <input type="button" value="Submit" id="button1" onclick="test1(this.form)" />
 
-            </form>
+                </table>
+                <br />
+                
+                <b>2. Give me 2 leaders who may not be able to do F2F.</b>
+                <table>
+
+                    <tr>
+                        <td>
+
+                            1st "No Face-to-Face" Leader ?
+                        </td>
+                        <td>
+                            <input type="text" name="NoF2FLeader" value="" />
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>
+
+                            2nd "No Face-to-Face" Leader ?
+                        </td>
+                        <td>
+                            <input type="text" name="NoF2FLeader2" value="" />
+                        </td>
+                    </tr>
+                </table>
+                    <input type="button" value="Submit" id="button1" onclick="test1(this.form)" />
+
+</form>
 
         </div>
         <div class="spacer"></div>
         <div class="font1">
             <table>
                 <tr>
-                    <td>
+                    <td style="width:40%">
                         <table>
                 <tr>
-                    <td class="col1"><b>Deposit: </b></td>
+                    <td><b>Deposit: </b></td>
                     <td class="col2" id="Deposit"></td>
                 </tr>
                 <tr>
-                    <td class="col1"><b>Count Drawers: </b></td>
+                    <td ><br /><b>Count Drawers: </b></td>
                     <td class="col2" id="Count_Drawers"></td>
                 </tr>
                 <tr>
-                    <td class="col1"><b>Restocker 1 (Coolers): </b></td>
+                    <td ><b>Restocker 1 (Coolers): </b></td>
                     <td class="col2" id="Restocker1"></td>
                 </tr>
                            <tr>
-                    <td class="col1"><b>Restocker 2 (Teas/Lemonades): </b></td>
+                    <td ><b>Restocker 2 (Teas/Lemonades): </b></td>
                     <td class="col2" id="Restocker2"></td>
                 </tr>
-                        </table></td>
-                    <td>
+                        </table></td> <td style="width:20%"></td>
+
+                    <td style="width:40%">
                         <table>
                 <tr>
-                    <td class="col1"><b>Front: </b></td>
+                    <td ><b>Front: </b></td>
                     <td class="col2" id="Front_Manager"></td>
                 </tr>
                 <tr>
-                    <td class="col1"><b>DT: </b></td>
+                    <td><b>DT: </b></td>
                     <td class="col2" id="DT_Manager"></td>
                 </tr>
                            <tr>
-                    <td class="col1"><b>Catering: </b></td>
+                    <td><b>Catering: </b></td>
                     <td class="col2" id="Catering_Manager"></td>
                 </tr>
-                        </table>
+                        </table></td></tr></table>
                         
 
 
