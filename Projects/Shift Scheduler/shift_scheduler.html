@@ -17,22 +17,6 @@
             padding: 10px;
         }
 
-        div.spacer {
-            height: 70%;
-        }
-
-        td.buffer {
-            width: 160px;
-        }
-
-        td.col1 {
-            width: 40%;
-            font-weight: bold;
-        }
-
-        td.col2 {
-            width: 60%;
-        }
     </style>
 
 
@@ -45,9 +29,28 @@
     <script language="JavaScript">
 
         function test1(form) {
-            var position1 = form.front_manager.value;
-            var position2 = form.dt_manager.value;
-            var position3 = form.catering.value;
+            var position1 = form.Front_Manager.value;
+            var position2 = form.DT_Manager.value;
+            var position3 = form.Catering.value;
+            var position4 = form.noF2Fleader.value;
+            var position5 = form.noF2Fleader2.value;
+            var position6 = form.DTShakes.value;
+            var position7 = form.TeamLeader1.value;
+            var position8 = form.TeamLeader2.value;
+            var position9 = form.TeamMember1.value;
+            var position10 = form.TeamMember2.value;
+            var position11 = form.TeamMember3.value;
+            var position12 = form.TeamMember4.value;
+            var position13 = form.TeamMember5.value;
+            
+            var position14 = form.Opener.value;
+            var position15 = form.Opener_Deposit.value;
+            var position16 = form.TeamMember1at7.value;
+            var position17 = form.TeamMember2at7.value;
+            var position18 = form.TeamMember3at7.value;
+            var position19 = form.TeamMember1at8.value;
+            var position20 = form.TeamMember2at8.value;
+            var position21 = form.TeamMember3at8.value;
 
 
 
@@ -112,18 +115,41 @@
         <div class="font1">
             <table>
                 <tr>
+                    <td>
+                        <table>
+                <tr>
+                    <td class="col1"><b>Deposit: </b></td>
+                    <td class="col2" id="Deposit"></td>
+                </tr>
+                <tr>
+                    <td class="col1"><b>Count Drawers: </b></td>
+                    <td class="col2" id="Count_Drawers"></td>
+                </tr>
+                <tr>
+                    <td class="col1"><b>Restocker 1 (Coolers): </b></td>
+                    <td class="col2" id="Restocker1"></td>
+                </tr>
+                           <tr>
+                    <td class="col1"><b>Restocker 2 (Teas/Lemonades): </b></td>
+                    <td class="col2" id="Restocker2"></td>
+                </tr>
+                        </table></td>
+                    <td>
+                        <table>
+                <tr>
                     <td class="col1"><b>Front: </b></td>
-                    <td class="col2" id="front_manager"></td>
+                    <td class="col2" id="Front_Manager"></td>
                 </tr>
                 <tr>
                     <td class="col1"><b>DT: </b></td>
-                    <td class="col2" id="dt_manager"></td>
+                    <td class="col2" id="DT_Manager"></td>
                 </tr>
-                <tr>
+                           <tr>
                     <td class="col1"><b>Catering: </b></td>
-                    <td class="col2" id="catering"></td>
+                    <td class="col2" id="Catering_Manager"></td>
                 </tr>
-            </table>
+                        </table>
+                        
 
 
         </div>
