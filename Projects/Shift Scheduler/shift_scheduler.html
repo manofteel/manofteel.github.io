@@ -11,16 +11,30 @@
         }
 
         div.solidborder {
-            border-style: solid;
-            border-width: thin;
-            width: 600px;
-            padding: 10px;
+            border-top:4px solid black;
+            border-bottom:1px solid black;
         }
 
         td.col2{
             width:50%;
         }
 
+        a:link{
+        color:red;
+    }
+
+    a:visited{
+        color:red;
+    }
+   
+    a:hover {
+        color:darkgrey;
+        font-weight:bold;
+    }
+
+    a:active {
+        color:gainsboro;
+    }
 
     </style>
 
@@ -39,7 +53,7 @@
             var position3 = form.Catering.value;
             var position4 = form.NoF2FLeader.value; 
             var position5 = form.NoF2FLeader2.value;
-            var position6 = form.DTShakes.value;
+            var position6 = form.DTShakes12_1.value;
             var position7 = form.TeamLeader1.value;
             var position8 = form.TeamLeader2.value;
             var position9 = form.TeamMember1.value;
@@ -58,27 +72,48 @@
             var position21 = form.TeamMember3at8.value; 
 
 
-
+            //Other positions and assignments
            document.getElementById("Front_Manager").innerHTML = position1; 
             document.getElementById("DT_Manager").innerHTML = position2; 
             document.getElementById("Catering").innerHTML = position3; 
             document.getElementById("Deposit").innerHTML = position5;
+            document.getElementById("Restocker1").innerHTML = ;
+            document.getElementById("Restocker2").innerHTML = ;
+
+            //7-8 Block
+            document.getElementById("DTBagger7_8").innerHTML = ;
+            document.getElementById("Window7_8").innerHTML = ;
+            document.getElementById("Expediter7_8").innerHTML = ;
+            document.getElementById("Shakes7_8").innerHTML = ;
+            document.getElementById("Face-to-Face7_8").innerHTML = ;
+            document.getElementById("FrontBagger7_8").innerHTML = ;
+
+            //8-9 Block
+            document.getElementById("DTBagger8_9").innerHTML = ;
+            document.getElementById("Window8_9").innerHTML = ;
+            document.getElementById("Expediter8_9").innerHTML = ;
+            document.getElementById("Shakes8_9").innerHTML = ;
+            document.getElementById("Face-to-Face8_9").innerHTML = ;
+            document.getElementById("FrontBagger8_9").innerHTML = ;
+            document.getElementById("Runner8_9").innerHTML = ;
+
 
 
         }
 
     </script>
 
-
+    <br /><br />
     <center>
         <div class="solidborder">
-            <h2>The Book</h2>
+            <h1>The Book</h1>
+            <p style="width:50%"><b>DON'T use the same name twice to answer questions 1-5. Its tailored to work for a 12 person shift instead of the normal 13 already, so 
+                if you don't have 5 Team Members, enter 4 and leave the last blank. Questions 6-8 are for the morning (7-10) and can reuse people.</b></p><br /><br />
             <form name="submission_form" method="GET" onsubmit="return false">
-                <table>
-
-
-                    <tr>
-                        <td>
+            <table style="width:65%">
+                <tr>
+                    <td>
+            
 
                             <b>1. Tell me who's running the shift :</b>
                             <table>
@@ -91,7 +126,7 @@
                                     <td>
                                         <input type="text" name="Front_Manager" value="" />
                                     </td>
-                                </tr> 
+                                </tr>
                                 <tr>
                                     <td>
                                         DT?
@@ -108,13 +143,10 @@
                                         <input type="text" name="Catering" value="" />
                                     </td>
                                 </tr>
-                            </table> <br /><br />
-                        </td>
-                    </tr>
-
-                </table>
+                            </table> <br />
+                       
                 <br />
-                
+
                 <b>2. Give me 2 leaders who may not be able to do F2F.</b>
                 <table>
 
@@ -126,7 +158,7 @@
                         <td>
                             <input type="text" name="NoF2FLeader" value="" />
                         </td>
-                    </tr> 
+                    </tr>
                     <tr>
                         <td>
 
@@ -136,14 +168,190 @@
                             <input type="text" name="NoF2FLeader2" value="" />
                         </td>
                     </tr>
-                </table>
-                    <input type="button" value="Submit" id="button1" onclick="test1(this.form)" />
+                </table><br /><br />
 
-</form>
+                <b>3. Important - who is doing DT Shakes 12-1.</b>
+                <table>
+
+                    <tr>
+                        <td>
+
+                            DT Shakes 12-1 ?
+                        </td>
+                        <td>
+                            <input type="text" name="DTShakes12_1" value="" />
+                        </td>
+                    </tr>
+                </table><br /><br />
+
+                <b>4. Give me 2 Team Leaders (gotta be able to do F2F).</b>
+                <table>
+
+                    <tr>
+                        <td>
+
+                            1st Team Leader.
+                        </td>
+                        <td>
+                            <input type="text" name="TeamLeader1" value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            2nd Team Leader.
+                        </td>
+                        <td>
+                            <input type="text" name="TeamLeader2" value="" />
+                        </td>
+                    </tr>
+                </table><br />
+                <br />
+                <b>5. Give me 5 Team Members. </b>
+                <table>
+
+                    <tr>
+                        <td>
+
+                            1.
+                        </td>
+                        <td>
+                            <input type="text" name="TeamMember1" value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            2.
+                        </td>
+                        <td>
+                            <input type="text" name="TeamMember2" value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            3.
+                        </td>
+                        <td>
+                            <input type="text" name="TeamMember3" value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            4.
+                        </td>
+                        <td>
+                            <input type="text" name="TeamMember4" value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            5.
+                        </td>
+                        <td>
+                            <input type="text" name="TeamMember5" value="" />
+                        </td>
+                    </tr>
+
+                </table></td><td style="width:6%;border-left:1px solid black;"></td>
+                    <td valign="top">
+                        <b>6. Now tell me 2 who open.</b>
+                <table>
+
+                    <tr>
+                        <td>
+
+                            Opener.
+                        </td>
+                        <td>
+                            <input type="text" name="Opener" value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            Opener, Manager.
+                        </td>
+                        <td>
+                            <input type="text" name="Opener_Manager" value="" />
+                        </td>
+                    </tr>
+                </table><br />
+                <br />
+                <b>7. Tell me 3 Team Members who get here at 7am.</b>
+                <table>
+
+                    <tr>
+                        <td>
+
+                            1.
+                        </td>
+                        <td>
+                            <input type="text" name="TeamMember1at7" value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            2.
+                        </td>
+                        <td>
+                            <input type="text" name="TeamMember2at7" value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            3.
+                        </td>
+                        <td>
+                            <input type="text" name="TeamMember3at7" value="" />
+                        </td>
+                    </tr>
+                </table><br />
+                <b>8. Tell me 3 Team Members who get here at 8am.</b>
+                <table>
+
+                    <tr>
+                        <td>
+
+                            1.
+                        </td>
+                        <td>
+                            <input type="text" name="TeamMember1at8" value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            2.
+                        </td>
+                        <td>
+                            <input type="text" name="TeamMember2at8" value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            3.
+                        </td>
+                        <td>
+                            <input type="text" name="TeamMember3at8" value="" />
+                        </td>
+                    </tr>
+                </table></td></tr></table>
+                <br />
+                <br />
+                <a href="#results" target="_top"><input type="button" value="Submit" id="button1" onclick="test1(this.form)" /></a>
+
+            </form><br />
 
         </div>
-        <div class="spacer"></div>
-        <div class="font1">
+        <br /><br />
+        <div id="results">
             <table>
                 <tr>
                     <td style="width:40%">
