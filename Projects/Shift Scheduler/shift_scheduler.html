@@ -53,7 +53,7 @@
             var position3 = form.Catering.value;
             var position4 = form.NoF2FLeader.value; 
             var position5 = form.NoF2FLeader2.value;
-            var position6 = form.DTShakes12_1.value;
+            var position6 = form.Shakes12_1.value;
             var position7 = form.TeamLeader1.value;
             var position8 = form.TeamLeader2.value;
             var position9 = form.TeamMember1.value;
@@ -71,31 +71,89 @@
             var position20 = form.TeamMember2at8.value;
             var position21 = form.TeamMember3at8.value; 
 
+            //The Core - Assignments are made based off user input. The book is balanced on the criteria of experience,
+            //evenly distributing time-outside, and job duties according to shift.
 
             //Other positions and assignments
            document.getElementById("Front_Manager").innerHTML = position1; 
             document.getElementById("DT_Manager").innerHTML = position2; 
             document.getElementById("Catering").innerHTML = position3; 
-            document.getElementById("Deposit").innerHTML = position5;
-            document.getElementById("Restocker1").innerHTML = ;
-            document.getElementById("Restocker2").innerHTML = ;
+            document.getElementById("Deposit").innerHTML = position15;
+            document.getElementById("Count_Drawers").innerHTML = position5;
+            document.getElementById("Restocker1").innerHTML = position12;
+            document.getElementById("Restocker2").innerHTML = position8;
 
             //7-8 Block
-            document.getElementById("DTBagger7_8").innerHTML = ;
-            document.getElementById("Window7_8").innerHTML = ;
-            document.getElementById("Expediter7_8").innerHTML = ;
-            document.getElementById("Shakes7_8").innerHTML = ;
-            document.getElementById("Face-to-Face7_8").innerHTML = ;
-            document.getElementById("FrontBagger7_8").innerHTML = ;
+            document.getElementById("DTBagger7_8").innerHTML = position15;
+            document.getElementById("Window7_8").innerHTML = position17
+            document.getElementById("Expediter7_8").innerHTML = "";
+            document.getElementById("Shakes7_8").innerHTML = position16;
+            document.getElementById("Face-to-Face7_8").innerHTML = "";
+            document.getElementById("FrontBagger7_8").innerHTML = position14;
 
             //8-9 Block
-            document.getElementById("DTBagger8_9").innerHTML = ;
-            document.getElementById("Window8_9").innerHTML = ;
-            document.getElementById("Expediter8_9").innerHTML = ;
-            document.getElementById("Shakes8_9").innerHTML = ;
-            document.getElementById("Face-to-Face8_9").innerHTML = ;
-            document.getElementById("FrontBagger8_9").innerHTML = ;
-            document.getElementById("Runner8_9").innerHTML = ;
+            document.getElementById("DTBagger8_9").innerHTML = "";
+            document.getElementById("Window8_9").innerHTML = position16;
+            document.getElementById("Expediter8_9").innerHTML = "";
+            document.getElementById("Shakes8_9").innerHTML = position21;
+            document.getElementById("Face-to-Face8_9").innerHTML = position19 ;
+            document.getElementById("FrontBagger8_9").innerHTML = position20 ;
+            document.getElementById("Runner8_9").innerHTML = "";
+            document.getElementById("Face-to-Face9_10").innerHTML = position21;
+            document.getElementById("Unassigned1_8-9").innerHTML = position14;
+            document.getElementById("Unassigned2_8-9").innerHTML = position15;
+            document.getElementById("Unassigned3_8-9").innerHTML = position17;
+            document.getElementById("Unassigned4_8-9").innerHTML = position18;
+
+            //10-12 Block
+            document.getElementById("DTBagger10_12").innerHTML = position8;
+            document.getElementById("Window10_12").innerHTML = position9;
+            document.getElementById("Expediter11_12").innerHTML = position13;
+            document.getElementById("Shakes10_12").innerHTML = position12;
+            document.getElementById("Face-to-Face1_10-11").innerHTML = position2;            
+            document.getElementById("Face-to-Face2_10-11").innerHTML = position10;            
+            document.getElementById("Face-to-Face1_11-12").innerHTML = position6;
+            document.getElementById("Face-to-Face2_11-12").innerHTML = position11;
+            document.getElementById("FrontBagger10_12").innerHTML = position7;
+            document.getElementById("Runner10_12").innerHTML = "";
+            document.getElementById("Restocker10_11").innerHTML = position6;
+            document.getElementById("Unassigned1_10-12").innerHTML = position1 ;
+            document.getElementById("Unassigned2_10-12").innerHTML = position3;
+            document.getElementById("Unassigned3_10-12").innerHTML = position4;
+            document.getElementById("Unassigned4_10-12").innerHTML = position5;
+
+            //12-1 Block
+            document.getElementById("DTBagger12_1").innerHTML = "";
+            document.getElementById("Window12_1").innerHTML = "";
+            document.getElementById("Expediter1_12-1").innerHTML = position12;            
+            document.getElementById("Expediter2_12-1").innerHTML = "";
+            document.getElementById("Shakes12_1").innerHTML = position6;
+            document.getElementById("Face-to-Face1_12-1").innerHTML = position7;            
+            document.getElementById("Face-to-Face2_12-1").innerHTML = position9;            
+            document.getElementById("Face-to-Face3_12-1").innerHTML = position8;
+            document.getElementById("FrontBagger12_1").innerHTML = "";
+            document.getElementById("Runner12_1").innerHTML = position11;
+            document.getElementById("MobileRunner12_1").innerHTML = position3;
+            document.getElementById("Unassigned1_12-1").innerHTML = position1;
+            document.getElementById("Unassigned2_12-1").innerHTML = position2;
+            document.getElementById("Unassigned3_12-1").innerHTML = position4;
+            document.getElementById("Unassigned4_12-1").innerHTML = position5;
+            document.getElementById("Unassigned5_12-1").innerHTML = position10;
+            document.getElementById("Unassigned6_12-1").innerHTML = position13;
+
+            //1-2 Block
+            document.getElementById("DTBagger1_2").innerHTML = position5;
+            document.getElementById("Window1_2").innerHTML = position2;
+            document.getElementById("Expediter1_2").innerHTML = position11;
+            document.getElementById("Shakes1_2").innerHTML = position9;
+            document.getElementById("Face-to-Face1_1-2").innerHTML = position13;            
+            document.getElementById("Face-to-Face2_1-2").innerHTML = position3;
+            document.getElementById("FrontBagger1_2").innerHTML = position1 ;
+            document.getElementById("Runner1_2").innerHTML = position7;
+            document.getElementById("Unassigned1_1-2").innerHTML = position6;
+            document.getElementById("Unassigned2_1-2").innerHTML = position4;
+            document.getElementById("Unassigned3_1-2").innerHTML = position10;
+
 
 
 
@@ -104,299 +162,613 @@
     </script>
 
     <br /><br />
-    <center>
-        <div class="solidborder">
-            <h1>The Book</h1>
-            <p style="width:50%"><b>DON'T use the same name twice to answer questions 1-5. Its tailored to work for a 12 person shift instead of the normal 13 already, so 
-                if you don't have 5 Team Members, enter 4 and leave the last blank. Questions 6-8 are for the morning (7-10) and can reuse people.</b></p><br /><br />
-            <form name="submission_form" method="GET" onsubmit="return false">
-            <table style="width:65%">
-                <tr>
-                    <td>
-            
-
-                            <b>1. Tell me who's running the shift :</b>
-                            <table>
-
-                                <tr>
-                                    <td>
-
-                                        Front ?
-                                    </td>
-                                    <td>
-                                        <input type="text" name="Front_Manager" value="" />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        DT?
-                                    </td>
-                                    <td>
-                                        <input type="text" name="DT_Manager" value="" />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Catering?
-                                    </td>
-                                    <td>
-                                        <input type="text" name="Catering" value="" />
-                                    </td>
-                                </tr>
-                            </table> <br />
-                       
-                <br />
-
-                <b>2. Give me 2 leaders who may not be able to do F2F.</b>
-                <table>
-
-                    <tr>
-                        <td>
-
-                            1st "No Face-to-Face" Leader ?
-                        </td>
-                        <td>
-                            <input type="text" name="NoF2FLeader" value="" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-
-                            2nd "No Face-to-Face" Leader ?
-                        </td>
-                        <td>
-                            <input type="text" name="NoF2FLeader2" value="" />
-                        </td>
-                    </tr>
-                </table><br /><br />
-
-                <b>3. Important - who is doing DT Shakes 12-1.</b>
-                <table>
-
-                    <tr>
-                        <td>
-
-                            DT Shakes 12-1 ?
-                        </td>
-                        <td>
-                            <input type="text" name="DTShakes12_1" value="" />
-                        </td>
-                    </tr>
-                </table><br /><br />
-
-                <b>4. Give me 2 Team Leaders (gotta be able to do F2F).</b>
-                <table>
-
-                    <tr>
-                        <td>
-
-                            1st Team Leader.
-                        </td>
-                        <td>
-                            <input type="text" name="TeamLeader1" value="" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-
-                            2nd Team Leader.
-                        </td>
-                        <td>
-                            <input type="text" name="TeamLeader2" value="" />
-                        </td>
-                    </tr>
-                </table><br />
-                <br />
-                <b>5. Give me 5 Team Members. </b>
-                <table>
-
-                    <tr>
-                        <td>
-
-                            1.
-                        </td>
-                        <td>
-                            <input type="text" name="TeamMember1" value="" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-
-                            2.
-                        </td>
-                        <td>
-                            <input type="text" name="TeamMember2" value="" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-
-                            3.
-                        </td>
-                        <td>
-                            <input type="text" name="TeamMember3" value="" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-
-                            4.
-                        </td>
-                        <td>
-                            <input type="text" name="TeamMember4" value="" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-
-                            5.
-                        </td>
-                        <td>
-                            <input type="text" name="TeamMember5" value="" />
-                        </td>
-                    </tr>
-
-                </table></td><td style="width:6%;border-left:1px solid black;"></td>
-                    <td valign="top">
-                        <b>6. Now tell me 2 who open.</b>
-                <table>
-
-                    <tr>
-                        <td>
-
-                            Opener.
-                        </td>
-                        <td>
-                            <input type="text" name="Opener" value="" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-
-                            Opener, Manager.
-                        </td>
-                        <td>
-                            <input type="text" name="Opener_Manager" value="" />
-                        </td>
-                    </tr>
-                </table><br />
-                <br />
-                <b>7. Tell me 3 Team Members who get here at 7am.</b>
-                <table>
-
-                    <tr>
-                        <td>
-
-                            1.
-                        </td>
-                        <td>
-                            <input type="text" name="TeamMember1at7" value="" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-
-                            2.
-                        </td>
-                        <td>
-                            <input type="text" name="TeamMember2at7" value="" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-
-                            3.
-                        </td>
-                        <td>
-                            <input type="text" name="TeamMember3at7" value="" />
-                        </td>
-                    </tr>
-                </table><br />
-                <b>8. Tell me 3 Team Members who get here at 8am.</b>
-                <table>
-
-                    <tr>
-                        <td>
-
-                            1.
-                        </td>
-                        <td>
-                            <input type="text" name="TeamMember1at8" value="" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-
-                            2.
-                        </td>
-                        <td>
-                            <input type="text" name="TeamMember2at8" value="" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-
-                            3.
-                        </td>
-                        <td>
-                            <input type="text" name="TeamMember3at8" value="" />
-                        </td>
-                    </tr>
-                </table></td></tr></table>
-                <br />
-                <br />
-                <a href="#results" target="_top"><input type="button" value="Submit" id="button1" onclick="test1(this.form)" /></a>
-
-            </form><br />
-
-        </div>
-        <br /><br />
-        <div id="results">
-            <table>
-                <tr>
-                    <td style="width:40%">
-                        <table>
-                <tr>
-                    <td><b>Deposit: </b></td>
-                    <td class="col2" id="Deposit"></td>
-                </tr>
-                <tr>
-                    <td ><br /><b>Count Drawers: </b></td>
-                    <td class="col2" id="Count_Drawers"></td>
-                </tr>
-                <tr>
-                    <td ><b>Restocker 1 (Coolers): </b></td>
-                    <td class="col2" id="Restocker1"></td>
-                </tr>
-                           <tr>
-                    <td ><b>Restocker 2 (Teas/Lemonades): </b></td>
-                    <td class="col2" id="Restocker2"></td>
-                </tr>
-                        </table></td> <td style="width:20%"></td>
-
-                    <td style="width:40%">
-                        <table>
-                <tr>
-                    <td ><b>Front: </b></td>
-                    <td class="col2" id="Front_Manager"></td>
-                </tr>
-                <tr>
-                    <td><b>DT: </b></td>
-                    <td class="col2" id="DT_Manager"></td>
-                </tr>
-                           <tr>
-                    <td><b>Catering: </b></td>
-                    <td class="col2" id="Catering_Manager"></td>
-                </tr>
-                        </table></td></tr></table>
-                        
+          <center>
+              <div class="solidborder">
+                  <h1>The Book</h1>
+                  <p style="width:50%">
+                      <b>
+                          DON'T use the same name twice to answer questions 1-5. Its tailored to work for a 12 person shift instead of the normal 13 already, so
+                          if you don't have 5 Team Members, enter 4 and leave the last blank. Questions 6-8 are for the morning (7-10) and can reuse people.
+                      </b>
+                  </p><br /><br />
+                  <form name="submission_form" method="GET" onsubmit="return false">
+                      <table style="width:65%">
+                          <tr>
+                              <td>
 
 
-        </div>
+                                  <b>1. Tell me who's running the shift :</b>
+                                  <table>
+
+                                      <tr>
+                                          <td>
+
+                                              Front ?
+                                          </td>
+                                          <td>
+                                              <input type="text" name="Front_Manager" value="" />
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              DT?
+                                          </td>
+                                          <td>
+                                              <input type="text" name="DT_Manager" value="" />
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              Catering?
+                                          </td>
+                                          <td>
+                                              <input type="text" name="Catering" value="" />
+                                          </td>
+                                      </tr>
+                                  </table> <br />
+
+                                  <br />
+
+                                  <b>2. Give me 2 leaders who may not be able to do F2F.</b>
+                                  <table>
+
+                                      <tr>
+                                          <td>
+
+                                              1st "No Face-to-Face" Leader ?
+                                          </td>
+                                          <td>
+                                              <input type="text" name="NoF2FLeader" value="" />
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+
+                                              2nd "No Face-to-Face" Leader ?
+                                          </td>
+                                          <td>
+                                              <input type="text" name="NoF2FLeader2" value="" />
+                                          </td>
+                                      </tr>
+                                  </table><br /><br />
+
+                                  <b>3. Important - who is doing DT Shakes 12-1.</b>
+                                  <table>
+
+                                      <tr>
+                                          <td>
+
+                                              DT Shakes 12-1 ?
+                                          </td>
+                                          <td>
+                                              <input type="text" name="Shakes12_1" value="" />
+                                          </td>
+                                      </tr>
+                                  </table><br /><br />
+
+                                  <b>4. Give me 2 Team Leaders (gotta be able to do F2F).</b>
+                                  <table>
+
+                                      <tr>
+                                          <td>
+
+                                              1st Team Leader.
+                                          </td>
+                                          <td>
+                                              <input type="text" name="TeamLeader1" value="" />
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+
+                                              2nd Team Leader.
+                                          </td>
+                                          <td>
+                                              <input type="text" name="TeamLeader2" value="" />
+                                          </td>
+                                      </tr>
+                                  </table><br />
+                                  <br />
+                                  <b>5. Give me 5 Team Members. </b>
+                                  <table>
+
+                                      <tr>
+                                          <td>
+
+                                              1.
+                                          </td>
+                                          <td>
+                                              <input type="text" name="TeamMember1" value="" />
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+
+                                              2.
+                                          </td>
+                                          <td>
+                                              <input type="text" name="TeamMember2" value="" />
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+
+                                              3.
+                                          </td>
+                                          <td>
+                                              <input type="text" name="TeamMember3" value="" />
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+
+                                              4.
+                                          </td>
+                                          <td>
+                                              <input type="text" name="TeamMember4" value="" />
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+
+                                              5.
+                                          </td>
+                                          <td>
+                                              <input type="text" name="TeamMember5" value="" />
+                                          </td>
+                                      </tr>
+
+                                  </table>
+                              </td>
+                              <td style="width:6%;border-left:1px solid black;"></td>
+                              <td valign="top">
+                                  <b>6. Now tell me 2 who open.</b>
+                                  <table>
+
+                                      <tr>
+                                          <td>
+
+                                              Opener.
+                                          </td>
+                                          <td>
+                                              <input type="text" name="Opener" value="" />
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+
+                                              Opener, Manager.
+                                          </td>
+                                          <td>
+                                              <input type="text" name="Opener_Deposit" value="" />
+                                          </td>
+                                      </tr>
+                                  </table><br />
+                                  <br />
+                                  <b>7. Tell me 3 Team Members who get here at 7am.</b>
+                                  <table>
+
+                                      <tr>
+                                          <td>
+
+                                              1.
+                                          </td>
+                                          <td>
+                                              <input type="text" name="TeamMember1at7" value="" />
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+
+                                              2.
+                                          </td>
+                                          <td>
+                                              <input type="text" name="TeamMember2at7" value="" />
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+
+                                              3.
+                                          </td>
+                                          <td>
+                                              <input type="text" name="TeamMember3at7" value="" />
+                                          </td>
+                                      </tr>
+                                  </table><br />
+                                  <b>8. Tell me 3 Team Members who get here at 8am.</b>
+                                  <table>
+
+                                      <tr>
+                                          <td>
+
+                                              1.
+                                          </td>
+                                          <td>
+                                              <input type="text" name="TeamMember1at8" value="" />
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+
+                                              2.
+                                          </td>
+                                          <td>
+                                              <input type="text" name="TeamMember2at8" value="" />
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+
+                                              3.
+                                          </td>
+                                          <td>
+                                              <input type="text" name="TeamMember3at8" value="" />
+                                          </td>
+                                      </tr>
+                                  </table>
+                              </td>
+                          </tr>
+                      </table>
+                      <br />
+                      <br />
+                      <a href="#results" target="_top"><input type="button" value="Submit" id="button1" onclick="test1(this.form)" /></a>
+
+                  </form><br />
+
+              </div>
+              <br /><br />
+              <div id="results">
+                  <table style="width:65%">
+                      <tr>
+                          <td style="width:40%">
+                              <table>
+                                  <tr>
+                                      <td><b>Deposit: </b></td>
+                                      <td class="col2" id="Deposit"></td>
+                                  </tr>
+                                  <tr>
+                                      <td><br /><b>Count Drawers: </b></td>
+                                      <td class="col2" id="Count_Drawers"></td>
+                                  </tr>
+                                  <tr>
+                                      <td><b>Restocker 1 (1-2pm)<br />(Coolers): </b></td>
+                                      <td class="col2" id="Restocker1"></td>
+                                  </tr>
+                                  <tr>
+                                      <td><b>Restocker 2 (1-2pm)<br />(Teas/Lemonades): </b></td>
+                                      <td class="col2" id="Restocker2"></td>
+                                  </tr>
+                              </table>
+                          </td>
+                          <td style="width:20%"></td>
+
+                          <td style="width:40%">
+                              <table>
+                                  <tr>
+                                      <td><b>Front: </b></td>
+                                      <td class="col2" id="Front_Manager"></td>
+                                  </tr>
+                                  <tr>
+                                      <td><b>DT: </b></td>
+                                      <td class="col2" id="DT_Manager"></td>
+                                  </tr>
+                                  <tr>
+                                      <td><b>Catering: </b></td>
+                                      <td class="col2" id="Catering"></td>
+                                  </tr>
+                              </table>
+                          </td>
+                      </tr>
+                  </table>
 
 
 
-    </center>
+              </div><br /><br />
+              <div style="width:65%;border:4px solid black">
+                  <b>7-8</b><br />
+              </div>
+              <table>
+                  <tr>
+                      <td style="width:85%">
+                          <table style="width:85%">
+                              <tr>
+                                  <td style="width:35%">DT Bagger: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="DTBagger7_8"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Window: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="Window7_8"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Expediter: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="Expediter7_8"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Shakes: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="Shakes7_8"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Face-to-Face: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="Face-to-Face7_8"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Front Bagger: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="FrontBagger7_8"></td>
+                              </tr>
+                          </table>
+                      </td>
+                      <td style="width:15%" valign="top"> <i>Unassigned</i><br /></td>
+                  </tr>
+              </table>
+
+              <br /><br /><br />
+              <div style="width:65%;border:4px solid black">
+                  <b>8-9</b><br />
+              </div>
+              <table>
+                  <tr>
+                      <td style="width:85%">
+                          <table style="width:100%">
+                              <tr>
+                                  <td style="width:35%">DT Bagger: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="DTBagger8_9"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Window: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="Window8_9"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Expediter: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="Expediter8_9"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Shakes: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="Shakes8_9"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Face-to-Face: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="Face-to-Face8_9"></td>
+                              <tr>
+                                  <td style="width:35%">Front Bagger: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="FrontBagger8_9"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Runner: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="Runner8_9"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">9-10 Face-to-Face: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="Face-to-Face9_10"></td>
+                              </tr>
+                          </table>
+                      </td>
+                      <td style="width:15%" valign="top">
+                          <i>Unassigned</i><br />
+                          <ul>
+                              <li id="Unassigned1_8-9"></li>
+                              <li id="Unassigned2_8-9"></li>
+                              <li id="Unassigned3_8-9"></li>
+                              <li id="Unassigned4_8-9"></li>
+                          </ul>
+
+                      </td>
+                  </tr>
+              </table>
+              <br /><br />
+              <div style="width:65%;border:4px solid black">
+                  <b>10-12</b><br />
+              </div>
+              <table>
+                  <tr>
+                      <td style="width:90%">
+                          <table style="width:100%">
+                              <tr>
+                                  <td style="width:35%">DT Bagger: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="DTBagger10_12"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Window: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="Window10_12"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Shakes: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="Shakes10_12"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Expediter(11-12): </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="Expediter11_12"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Face-to-Face: </td>
+                                  <td style="width:60%">
+                                      <table style="width:100%">
+                                          <tr>
+                                              <td style="width:25%">#1 (10-11):</td>
+                                              <td style="width:25%;border-bottom:1px solid black" id="Face-to-Face1_10-11"></td>
+                                              <td style="width:25%">#2 (10-11):</td>
+                                              <td style="width:25%;border-bottom:1px solid black" id="Face-to-Face2_10-11"></td>
+                                          </tr>
+                                          <tr>
+                                              <td style="width:25%">#1 (11-12):</td>
+                                              <td style="width:25%;border-bottom:1px solid black" id="Face-to-Face1_11-12"></td>
+                                              <td style="width:25%">#2 (11-12):</td>
+                                              <td style="width:25%;border-bottom:1px solid black" id="Face-to-Face2_11-12"></td>
+                                          </tr>
+                                      </table>
+                                  </td>
+
+                              <tr>
+                                  <td style="width:35%">Front Bagger: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="FrontBagger10_12"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Runner: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="Runner10_12"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">10-11 Restocker: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="Restocker10_11"></td>
+                              </tr>
+                          </table>
+                      </td>
+                      <td style="width:10%" valign="top">
+                          <i>Unassigned</i>
+                          <ul>
+                              <li id="Unassigned1_10-12"></li>
+                              <li id="Unassigned2_10-12"></li>
+                              <li id="Unassigned3_10-12"></li>
+                              <li id="Unassigned4_10-12"></li>
+                              
+
+                          </ul> 
+                      </td>
+                  </tr>
+              </table>
+
+              <br /><br />
+              <div style="width:65%;border:4px solid black">
+                  <b>12-1</b><br />
+              </div>
+              <table>
+                  <tr>
+                      <td style="width:85%">
+                          <table style="width:100%">
+                              <tr>
+                                  <td style="width:35%">DT Bagger: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="DTBagger12_1"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Window: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="Window12_1"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Shakes: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="Shakes12_1"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Expediter: </td>
+                                  <td style="width:65%">
+                                      <table style="width:100%">
+                                          <tr>
+                                              <td style="width:25%">#1:</td>
+                                              <td style="width:25%;border-bottom:1px solid black" id="Expediter1_12-1"></td>
+                                              <td style="width:25%">#2:</td>
+                                              <td style="width:25%;border-bottom:1px solid black" id="Expediter2_12-1"></td>
+                                          </tr>
+                                      </table>
+
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Face-to-Face: </td>
+                                  <td style="width:60%">
+                                      <table style="width:100%">
+                                          <tr>
+                                              <td style="width:25%">#1:</td>
+                                              <td style="width:25%;border-bottom:1px solid black" id="Face-to-Face1_12-1"></td>
+                                              <td style="width:25%">#2:</td>
+                                              <td style="width:25%;border-bottom:1px solid black" id="Face-to-Face2_12-1"></td>
+                                          </tr>
+                                          <tr>
+                                              <td style="width:25%">#3:</td>
+                                              <td style="width:25%;border-bottom:1px solid black" id="Face-to-Face3_12-1"></td>
+
+                                          </tr>
+                                      </table>
+                                  </td>
+
+                              <tr>
+                                  <td style="width:35%">Front Bagger: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="FrontBagger12_1"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Runner: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="Runner12_1"></td>
+                              </tr>
+                              <tr>
+                                  <td style="width:35%">Mobile Runner: </td>
+                                  <td style="width:65%;border-bottom:1px solid black" id="MobileRunner12_1"></td>
+                              </tr>
+                          </table>
+                      </td>
+                      <td style="width:15%" valign="top">
+                          <i>Unassigned</i>
+                          <ul>
+                              <li id="Unassigned1_12-1"></li>
+                              <li id="Unassigned2_12-1"></li>
+                              <li id="Unassigned3_12-1"></li>
+                              <li id="Unassigned4_12-1"></li>
+                              <li id="Unassigned5_12-1"></li>
+                              <li id="Unassigned6_12-1"></li>
+
+                          </ul>
+                      </td>
+                  </tr>
+              </table>
+
+              <br /><br />
+              <div style="width:65%;border:4px solid black">
+                  <b>1-2</b><br />
+              </div>
+              <table>
+              <tr>
+                  <td style="width:90%">
+              <table style="width:100%">
+                  <tr>
+                      <td style="width:35%">DT Bagger: </td>
+                      <td style="width:65%;border-bottom:1px solid black" id="DTBagger1_2"></td>
+                  </tr>
+                  <tr>
+                      <td style="width:35%">Window: </td>
+                      <td style="width:65%;border-bottom:1px solid black" id="Window1_2"></td>
+                  </tr>
+                  <tr>
+                      <td style="width:35%">Shakes: </td>
+                      <td style="width:65%;border-bottom:1px solid black" id="Shakes1_2"></td>
+                  </tr>
+                  <tr>
+                      <td style="width:35%">Expediter: </td>
+                      <td style="width:65%;border-bottom:1px solid black" id="Expediter1_2"></td>
+                  </tr>
+                  <tr>
+                      <td style="width:35%">Face-to-Face: </td>
+                      <td style="width:60%">
+                          <table style="width:100%">
+                              <tr>
+                                  <td style="width:25%">#1:</td>
+                                  <td style="width:25%;border-bottom:1px solid black" id="Face-to-Face1_1-2"></td>
+                                  <td style="width:25%">#2:</td>
+                                  <td style="width:25%;border-bottom:1px solid black" id="Face-to-Face2_1-2"></td>
+                              </tr>
+
+                          </table>
+                      </td>
+
+                  <tr>
+                      <td style="width:35%">Front Bagger: </td>
+                      <td style="width:65%;border-bottom:1px solid black" id="FrontBagger1_2"></td>
+                  </tr>
+                  <tr>
+                      <td style="width:35%">Runner: </td>
+                      <td style="width:65%;border-bottom:1px solid black" id="Runner1_2"></td>
+                  </tr>
+              </table>
+              </td>
+              <td style="width:10%" valign="top">
+                  <i>Unassigned</i>
+                  <ul>
+                      <li id="Unassigned1_1-2"></li>
+                      <li id="Unassigned2_1-2"></li>
+                      <li id="Unassigned3_1-2"></li>
+                      
+
+                  </ul>
+              </td></tr></table>
+
+
+          </center>
+    <br /><br /><br /><br />
 
 
 </body>
