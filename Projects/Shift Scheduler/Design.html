@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+
+        body.font1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        div.solidborder {
+            border-top: 4px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        td.col2 {
+            width: 50%;
+        }
+
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            color: darkgrey;
+        }
+
+        a:active {
+            color: gainsboro;
+        }
+    </style>
+
+
+
+</head>
+
+
+<body class="font1">
+    
+
+        <h1>What is "the Book"</h1>
+        <h3>and how does this JavaScript work?</h3><br /><br />
+        <div style="width:65%">
+
+            "The Book" is what we call the Daily assignment sheet at the Chick-fil-A I've worked at for 4 years now.
+            <br /><br />
+            <table>
+                <tr>
+                    <td style="width:33%"> <img src="Design/7-8 book.jpg" style="width:200px"/></td>
+                    <td style="width:33%"> <img src="Design/10-12 Book.jpg" style="width:200px"/></td>
+                    <td style="width:33%"> <img src="Design/duties book.jpg" style="width:200px"/></td>
+                </tr>
+            </table>
+            <br /><br />
+           
+            Above you will see that there many positions across the day, with each hour's setup based
+            on sales. You will see the most positions from 12-1, as its the peak hour at the Drive-Thru.<br /><br />
+            For this store, and most others, the shift can be split up between three major areas:
+            <ul>
+                <li>Front (Inside)</li>
+                <li>Drive Thru (Inside)</li>
+                <li>Drive Thru (Outside)</li>
+            </ul>
+            <br />
+            Doing the book involves taking the people on the schedule, and
+            placing them in position based off some basic criteria:
+            <ol>
+                <li>Best people in DT positions from 12-1</li>
+                <li>No one is in the same position back-to-back, e.g. 10-12 DT Bagger and 12-1 DT Bagger</li>
+                <li>No one outside more than twice</li>
+                <li>Not everyone can do F2F due to health concerns</li>
+                <li>Not everyone can restock</li>
+                <li>Leave senior managers free after 1, and before noon if possible.</li>
+                <li>The Front Manager should not take a  DT position before 1, if at all. Needs to be able to run the shift.</li>
+                <li>The Catering Manager should not take a DT position before 1, to take care of catering orders.</li>
+            </ol>
+
+            There are others, but these are the basics. So the challenge for anyone doing the book, and so my script, is to take 12-15 people
+            and fill 48 positions with regard to sales, time, and the rules listed above.<br /><br />
+            Realistically, it would be next to impossible for a program to do the entire thing without need for any correction.
+            Some days, people are sick. Sometimes they don't feel up to a certain position and switch with others. Sometimes (most often),
+            leaders don't want to do certain jobs and switch them out. What I've tried to do with this script is make a tool
+            for new leaders to greatly reduce the number of variables involved in planning the day. Some edits are needed, and
+            some I've left blank on purpose (like key DT positions 12-1), because its better for the manager to make that choice. Regardless,
+            the number of options goes from 48 to around 5, and it without doubt reduces errors and time required to finish.<br /><br />
+        
+        </div>
+
+    <a href="Design2.html"><h2>Next: Script Design</h2></a>
+    <br /><br /><br /><br />
+
+   
+</body>
+</html>
